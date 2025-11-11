@@ -1,0 +1,120 @@
+import 'package:batch_35d_classwork/screens/area_of_circle_screen.dart';
+import 'package:batch_35d_classwork/screens/arithmetic_screen.dart';
+import 'package:batch_35d_classwork/screens/armstrong_number_screen.dart';
+import 'package:batch_35d_classwork/screens/palindrome_number_screen.dart';
+import 'package:batch_35d_classwork/screens/simple_interest_screen.dart';
+import 'package:flutter/material.dart';
+
+class DashboardScreen extends StatelessWidget {
+  const DashboardScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 23, 149, 217),
+        appBar: AppBar(
+          title: const Text(
+            'Dashboard',
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          ),
+          backgroundColor: Color.fromARGB(255, 215, 212, 219),
+        ),
+
+        body: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 25),
+              SizedBox(
+                width: 400.0,
+                height: 70.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ArithmeticScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Arithmetic", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 70.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SimpleInterestScreen(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Simple Interest",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 70.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AreaOfCircleScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Area of Circle", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 70.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PalindromeNumberScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Palindrome", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 70.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ArmstrongNumberScreen(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Armstrong Number",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

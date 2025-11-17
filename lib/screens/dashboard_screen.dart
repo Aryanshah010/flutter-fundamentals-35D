@@ -1,7 +1,9 @@
 import 'package:batch_35d_classwork/screens/area_of_circle_screen.dart';
 import 'package:batch_35d_classwork/screens/arithmetic_screen.dart';
 import 'package:batch_35d_classwork/screens/armstrong_number_screen.dart';
+import 'package:batch_35d_classwork/screens/flutter_layout_screen.dart';
 import 'package:batch_35d_classwork/screens/palindrome_number_screen.dart';
+import 'package:batch_35d_classwork/screens/rich_text_screen.dart';
 import 'package:batch_35d_classwork/screens/simple_interest_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -101,6 +103,38 @@ class DashboardScreen extends StatelessWidget {
                   );
                 },
                 child: Text("Armstrong Number", style: TextStyle(fontSize: 25)),
+              ),
+            ),
+            SizedBox(height: 16),
+            SizedBox(
+              width: 400.0,
+              height: 70.0,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RichTextScreen(),
+                    ),
+                  );
+                },
+                child: Text("Rich Text", style: TextStyle(fontSize: 25)),
+              ),
+            ),
+            SizedBox(height: 16),
+            SizedBox(
+              width: 400.0,
+              height: 70.0,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FlutterLayoutScreen(),
+                    ),
+                  );
+                },
+                child: Text("Flutter Layout", style: TextStyle(fontSize: 25)),
               ),
             ),
           ],

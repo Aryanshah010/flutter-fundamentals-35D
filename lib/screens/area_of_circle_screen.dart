@@ -45,8 +45,18 @@ class _AreaOfCircleScreenState extends State<AreaOfCircleScreen> {
                   controller: radiusController,
 
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: "Enter the radius",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      borderSide: BorderSide(color: Colors.red),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      borderSide: BorderSide(color: Colors.green),
+                    ),
+                    labelText: "Enter the radius",
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {

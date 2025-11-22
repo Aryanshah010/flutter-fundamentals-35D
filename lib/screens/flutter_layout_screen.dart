@@ -23,12 +23,13 @@ class FlutterLayoutScreen extends StatelessWidget {
           ),
 
           child: Row(
-            // spacing: 25,
-            // mainAxisAlignment: MainAxisAlignment.center,
-            // crossAxisAlignment: CrossAxisAlignment.center,
+            spacing: 25,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Column(
                 mainAxisSize: MainAxisSize.min,
+
                 children: [
                   const Icon(Icons.call, size: 45.0, color: Colors.black),
                   Text(

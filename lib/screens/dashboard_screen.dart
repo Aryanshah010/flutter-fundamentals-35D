@@ -1,4 +1,5 @@
 import 'package:batch_35d_classwork/screens/area_of_circle_screen.dart';
+import 'package:batch_35d_classwork/screens/arithmetic2_screen.dart';
 import 'package:batch_35d_classwork/screens/arithmetic_screen.dart';
 import 'package:batch_35d_classwork/screens/armstrong_number_screen.dart';
 import 'package:batch_35d_classwork/screens/column_screen.dart';
@@ -30,7 +31,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 25),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -46,7 +47,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -62,7 +63,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -78,7 +79,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -94,7 +95,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -110,7 +111,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -126,7 +127,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -142,7 +143,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -158,7 +159,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 16),
             SizedBox(
               width: 400.0,
-              height: 70.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -169,6 +170,22 @@ class DashboardScreen extends StatelessWidget {
                   );
                 },
                 child: Text("Row and alignment", style: TextStyle(fontSize: 25)),
+              ),
+            ),
+            SizedBox(height: 16),
+            SizedBox(
+              width: 400.0,
+              height: 50.0,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Arithmetic2Screen(),
+                    ),
+                  );
+                },
+                child: Text("Arithmetic2", style: TextStyle(fontSize: 25)),
               ),
             ),
           ],

@@ -4,6 +4,7 @@ import 'package:batch_35d_classwork/screens/arithmetic_screen.dart';
 import 'package:batch_35d_classwork/screens/armstrong_number_screen.dart';
 import 'package:batch_35d_classwork/screens/column_screen.dart';
 import 'package:batch_35d_classwork/screens/container_screen.dart';
+import 'package:batch_35d_classwork/screens/custom_widget_screen.dart';
 import 'package:batch_35d_classwork/screens/flexible_expanded_screen.dart';
 import 'package:batch_35d_classwork/screens/flutter_layout_screen.dart';
 import 'package:batch_35d_classwork/screens/image_view_screen.dart';
@@ -224,7 +225,7 @@ class DashboardScreen extends StatelessWidget {
                   child: Text("Image View Screen", style: TextStyle(fontSize: 25)),
                 ),
               ),
-               SizedBox(height: 16),
+              SizedBox(height: 16),
               SizedBox(
                 width: 400.0,
                 height: 50.0,
@@ -238,6 +239,38 @@ class DashboardScreen extends StatelessWidget {
                     );
                   },
                   child: Text("Flexible Screen", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 50.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CustomWidgetScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Custom widget Screen", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+                 SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 50.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CustomWidgetScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("My TextFormField", style: TextStyle(fontSize: 25)),
                 ),
               ),
             ],

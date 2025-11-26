@@ -13,7 +13,7 @@ class FlexibleExpandedScreen extends StatelessWidget {
           Expanded(
             flex: 2,
             child: GestureDetector(
-              onTap: () {
+              onDoubleTap: () {
                 showMySnackBar(
                   context: context,
                   message: "I am container 1",
@@ -32,7 +32,7 @@ class FlexibleExpandedScreen extends StatelessWidget {
             //fit:  FlexFit.tight,
             flex: 3,
             child: GestureDetector(
-              onTap: () {
+              onDoubleTap: () {
                 showMySnackBar(
                   context: context,
                   message: "I am container 2",

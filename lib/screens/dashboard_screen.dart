@@ -11,6 +11,7 @@ import 'package:batch_35d_classwork/screens/image_view_screen.dart';
 import 'package:batch_35d_classwork/screens/palindrome_number_screen.dart';
 import 'package:batch_35d_classwork/screens/rich_text_screen.dart';
 import 'package:batch_35d_classwork/screens/row_screens.dart';
+import 'package:batch_35d_classwork/screens/number_game_screen.dart';
 import 'package:batch_35d_classwork/screens/simple_interest_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -257,7 +258,7 @@ class DashboardScreen extends StatelessWidget {
                   child: Text("Custom widget Screen", style: TextStyle(fontSize: 25)),
                 ),
               ),
-                 SizedBox(height: 16),
+              SizedBox(height: 16),
               SizedBox(
                 width: 400.0,
                 height: 50.0,
@@ -271,6 +272,22 @@ class DashboardScreen extends StatelessWidget {
                     );
                   },
                   child: Text("My TextFormField", style: TextStyle(fontSize: 25)),
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                width: 400.0,
+                height: 50.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const NumberGameScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Number Game", style: TextStyle(fontSize: 25)),
                 ),
               ),
             ],
